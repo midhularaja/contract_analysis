@@ -1,0 +1,16 @@
+SAMPLE VENDOR AGREEMENT
+
+This Vendor Agreement is entered into on 1 January 2024 between
+ABC SME Pvt Ltd, Mumbai and XYZ Supplies, New Delhi.
+
+1. Termination
+Either party may terminate this agreement without prior notice.
+
+2. Payment Terms
+Payments delayed beyond 15 days will attract interest at 24% per annum.
+
+3. Arbitration
+Any dispute shall be resolved by arbitration in New Delhi.
+
+4. Governing Law
+This agreement shall be governed by the laws of India.
