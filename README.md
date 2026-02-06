@@ -1,0 +1,3 @@
+A lightweight GenAI-powered legal assistant for Indian SMEs that analyzes contracts and highlights legal risks in plain business language.
+Supports PDF, DOCX, and TXT contracts in English and Hindi, provides clause-level risk insights, simplified explanations, and actionable advice.
+Built using Python, FastAPI, and Streamlit, with local processing to maintain confidentiality and audit logs for legal review.
