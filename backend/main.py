@@ -1,24 +1,23 @@
-from fastapi import FastAPI, UploadFile, File
+import streamlit as st
 from processor import process_contract_logic
-import json
-import datetime
-import os
-import uvicorn
 
-app = FastAPI()
+st.set_page_config(page_title="SME Legal Analyzer", layout="centered")
 
-@app.post("/analyze")
-async def analyze_contract(file: UploadFile = File(...)):
-    content = await file.read()
-    result = process_contract_logic(content, file.filename)
-    
-    if not os.path.exists("logs"): os.makedirs("logs")
-    with open("logs/audit_log.json", "a") as f:
-        log = {"timestamp": str(datetime.datetime.now()), "file": file.filename}
-        f.write(json.dumps(log) + "\n")
-    return result
+st.title("📄 SME Legal Contract Analyzer")
 
-# THIS PART MUST BE AT THE VERY BOTTOM
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
-    
+uploaded_file = st.file_uploader(
+    "Upload contract file (PDF / DOCX / TXT)",
+    type=["pdf", "docx", "doc", "txt"]
+)
+
+if uploaded_file is not None:
+    file_bytes = uploaded_file.read()
+    filename = uploaded_file.name
+
+    with st.spinner("Analyzing contract..."):
+        result = process_contract_logic(file_bytes, filename)
+
+    st.success("Analysis completed ✅")
+
+    st.subheader("📌 Contract Summary")
+    st.json(result)
