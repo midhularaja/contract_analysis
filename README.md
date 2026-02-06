@@ -1,4 +1,6 @@
-A lightweight GenAI-powered legal assistant for Indian SMEs that analyzes contracts and highlights legal risks in plain business language.Supports PDF, DOCX, and TXT contracts in English and Hindi, provides clause-level risk insights, simplified explanations, and actionable advice.Built using Python, FastAPI, and Streamlit, with local processing to maintain confidentiality and audit logs for legal review.
+A lightweight GenAI-powered legal assistant for Indian SMEs that analyzes contracts and highlights legal risks in plain business language.
+Supports PDF, DOCX, and TXT contracts in English and Hindi, provides clause-level risk insights, simplified explanations, and actionable advice.
+Built using Python, FastAPI, and Streamlit, with local processing to maintain confidentiality and audit logs for legal review.
 
 How to Run the Project
 
@@ -26,6 +28,5 @@ Supported formats: PDF, DOCX, TXT
 View contract type, risk score, clause explanations, and actionable advice
 
 Note
-
 Backend must be running before starting the Streamlit app.
 All contract processing happens locally to maintain confidentiality.
