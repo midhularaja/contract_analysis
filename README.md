@@ -5,23 +5,23 @@ Built using Python, FastAPI, and Streamlit, with local processing to maintain co
 How to Run the Project
 
 Create and activate virtual environment
-python -m venv venv
-venv\Scripts\activate
+`python -m venv venv`
+`venv\Scripts\activate`
 
 Install dependencies using requirements file
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Start backend server (FastAPI)
-python main.py
+`python main.py`
 
 Backend will run at
-http://127.0.0.1:8000
+`http://127.0.0.1:8000`
 
 Start frontend application (Streamlit)
-streamlit run app.py
+`streamlit run app.py`
 
 Application will open in browser at
-http://localhost:8501
+`http://localhost:8501`
 
 Upload contract file
 Supported formats: PDF, DOCX, TXT
